@@ -1,0 +1,711 @@
+/************************************
+        BASIC TYPOGRAPHY 
+************************************/
+body,
+html {
+}
+body{
+	margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #Ffffff;
+   -webkit-font-smoothing: antialiased;
+}
+
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    color: #111;
+}
+a {
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color:inherit;
+    text-decoration: none;
+}
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #111;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.scroll-to-top:hover{
+    border-radius: 50%;
+}
+/*************************
+    NAVBAR CSS 
+*************************/
+.mynavbar{
+    background-color: transparent !important;
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+}
+.mynavbar .navbar-brand{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.mynavbar .navbar-brand > img{
+    width: 125px;
+}
+.mynavbar .navbar-nav .nav-link{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 15px;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: #18d36e;
+}
+.mynavbar .navbar-nav > li > .nav-link:hover, .mynavbar .navbar-nav > li > .nav-link:active{
+    color: #18d36e;
+}
+.mynavbar .dropdown-item{
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.mynavbar .dropdown-item:focus, .mynavbar .dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #18d36e;
+}
+.mynavbar .dropdown-menu {
+    top: 35px;
+    padding: 0px;
+    border-radius: 0px;
+}
+.nav-shrink {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+.navbar-toggler {
+    background-color: #18d36e;
+    border-color: #18d36e;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar-toggler .line-icon {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+}
+.navbar-toggler .line-icon + .line-icon {
+    margin-top: 4px;
+}  
+/***************************
+    HOME BACKGROUND CSS
+****************************/    
+.background{
+    background-image: url('../images/inner_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    height: calc(100vh - 100px);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.4 );
+}
+.hero-body{
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+.hero-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    padding: 0px 15px;
+}
+.hero-text > h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.btn.get-started {
+    background: #18d26e;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    }
+.btn.get-started:hover, .btn.get-started:active {
+    background: #fff;
+    color: #18d26e;
+}
+.social-media ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+}
+.social-media ul li {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+.social-media li a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.social-media li a:hover {
+    background-color: #18d26e;
+}
+.facebook {
+    background: #5D82D1;
+    box-shadow: 0 0 0 0px #5D82D1;
+}
+.google-plus {
+    background: #EB5E4C;
+    box-shadow: 0 0 0 0px #EB5E4C;
+}
+.youtube {
+    background: #E13138;
+    box-shadow: 0 0 0 0px #E13138;
+}
+.instagram{
+    background: #f56040;
+    box-shadow: 0 0 0 0px #f56040;
+}
+/*****************************
+       MAIN SECTION CSS
+******************************/
+section#main-section{
+    padding: 60px 0px;
+}
+.single-blog{
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out 0s;
+    margin-bottom: 30px;
+}
+.single-blog .blog-image{
+    transition: all 0.4s ease-in-out 0s;
+}
+.single-blog .blog-image:hover{
+    transform: scale(1.1);
+}
+.single-blog .blog-info{
+    padding: 30px 20px;
+    border:1px solid #f7f7f7;;
+}
+.single-blog .blog-info .blog-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+}
+.single-blog .blog-info .blog-title:hover{
+    color: #18d26e;
+}
+.blog-meta {
+    overflow: hidden;
+    margin: 10px auto;
+}
+.blog-meta>ul>li{
+    color: #777;
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    margin: 0 8px 0 0;
+    padding-right: 8px;
+    position: relative;
+}
+.blog-meta>ul>li:after{
+    position: absolute;
+    content: "-";
+    top: 0;
+    right: -1px;
+}
+.blog-meta>ul>li:last-child:after{
+    display: none;
+}
+.blog-meta>ul>li>a{
+    color: #000;
+    font-size: 14px;
+}
+.single-blog .blog-info p{
+    margin: 10px auto;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.single-blog .blog-info .btn{
+    background: #fff;
+    border: 1px solid #18d26e;
+    border-radius: 4px;
+    padding: 5px 20px;
+    color: #18d26e;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.video-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.single-blog .blog-info .blog-video{
+    margin: 0px -20px;
+    margin-bottom: -30px;
+}
+.single-blog .blog-info .btn:hover{
+    background: #18d26e;
+    color: #fff;
+}
+.myPagination > li{
+    margin-right: 5px;
+}
+.myPagination .page-link{
+    background: #eee;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 0px !important;
+    line-height: 24px;
+    transition: all 0.4s ease-in-out 0s; 
+}
+.myPagination .page-item.active .page-link{
+    background-color: #18d26e;
+    color: #fff;
+    border-color: #18d26e;
+}
+.myPagination .page-link:hover{
+    background-color: #18d26e;
+    color: #fff;
+}
+/****************************
+    SIDEBAR SECTION CSS
+*****************************/
+.sidebar-widget{
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 0 0 20px 20px;
+}
+.widget-title{
+    border-bottom: 3px solid #0c0d0d;
+    margin: 0 0 21px -20px;
+    padding: 0px 20px;
+}
+.sidebar-title{
+    background: #0c0d0d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 12px 15px 12px 15px;
+    font-weight: 700;
+    line-height: 10px;
+    margin: 0px;
+    display: inline-block;
+}
+.about-wrap p{
+    color: #666;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto 15px;
+}
+.about-wrap .read-more{
+    font-size: 18px;
+    font-weight: 700;
+    color: #18d26e;
+}
+.about-wrap .read-more:hover{
+    text-decoration: underline;
+}
+.popular-blog{
+    border-bottom: 1px dotted #898989;
+    margin: 0px auto 15px 0px;
+    padding-bottom: 15px;
+}
+.popular-blog:last-child{
+    border:0px;
+    padding: 0px;
+    margin: 0px;
+}
+.popular-blog .blog-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.popular-blog .blog-title:hover{
+    color: #18d26e;
+}
+.popular-blog .blog-meta>ul>li{
+    font-size: 12px;
+}
+.popular-blog .blog-meta>ul>li>a{
+    color: #777;
+    font-size: 12px;
+}
+.category_list > li{
+    position: relative;
+    font-size: 15px;
+    border-bottom: 1px dotted #9f9f9f;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 0px 0px 10px 0px;
+    text-transform: capitalize;
+}
+.category_list > li > i{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+.category_list > li > a:hover{
+    color: #18d26e;
+}
+.tag_list > a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: inline-block;
+    color: #666;
+    margin: 0px 4px 8px 0px;
+    text-transform: capitalize;
+}
+.tag_list > a:hover{
+    color: #fff;
+    background-color: #18d26e;
+}
+.input-type1{
+    border: 2px solid #5e5e5e;
+    border-radius: 0px;
+    font-size: 18px;
+    height: 50px;
+    box-shadow: none;
+    line-height: 30px;
+}
+.textarea-type1{
+    border: 2px solid #5e5e5e;
+    border-radius: 0px;
+    font-size: 18px;
+    box-shadow: none;
+    line-height: 30px;
+}
+.green-button{
+    background-color: #18d26e;
+    color: #fff;
+    border-radius: 0px;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 24px;
+    letter-spacing: 2px;
+    border:none;
+    font-size: 18px;
+    transform: all 0.4s ease-in-out 0s;
+    -webkit-transform: all 0.4s ease-in-out 0s;
+    -moz-transform: all 0.4s ease-in-out 0s;
+    -o-transform: all 0.4s ease-in-out 0s;
+}
+.input-type1:hover, .input-type1:focus, .textarea-type1:hover, .textarea-type1:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #000;
+}
+.green-button:hover, .green-button:focus, .green-button:active{
+    background-color: #0ba954;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.single-insta{
+    padding: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+/**********************************
+    FOOTER SECTION CSS
+**********************************/
+#footer{
+    background: #040e18 none repeat scroll 0 0;
+    padding: 60px 0px;
+}
+#footer h3 {
+    color: #fff;
+    padding-bottom: 30px;
+}
+.footer-social ul li{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+.footer-social ul li a{
+    background: #2e3537 none repeat scroll 0 0;
+    border: 1px solid #2e3537;
+    box-shadow: 0 0 0 7px transparent;
+    color: #aaa;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 28px;
+    padding: 5px 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+.footer-social ul li a:hover {
+    color: #fff;
+}
+.f_facebook:hover {
+    background: #5D82D1;
+    box-shadow: 0 0 0 0px #5D82D1;
+    border: 1px solid #5D82D1;
+}
+.f_google:hover {
+    background: #EB5E4C;
+    box-shadow: 0 0 0 0px #EB5E4C;
+    border: 1px solid #EB5E4C;
+}
+.f_youtube:hover {
+    background: #CC181E;
+    box-shadow: 0 0 0 0px #CC181E;
+    border: 1px solid #CC181E;
+}
+.f_instagram:hover {
+    background: #f56040;
+    box-shadow: 0 0 0 0px #f56040;
+    border: 1px solid #f56040;
+}
+footer{
+    background-color: #09121b;
+    padding: 30px 0;
+    color: #fff;
+}
+.copyright p {
+    font-weight: 400;
+}
+.copyright p > a:hover{
+    color: #18d26e;
+}
+/****************************
+    CONTACT US CSS
+****************************/
+.banner{
+    position: relative;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.banner.contact{
+    background-image: url("../images/MahuliBlog.jpg");
+}
+/****************************
+    ABOUT US CSS
+****************************/
+.banner.about{
+    background-image: url("../images/blog/post1.jpg");
+}
+.about-info h3, .behind-lines h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about-info p{
+    line-height: 27px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.about-info h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.follow-link > li{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.follow-link > li:before{
+        content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #111;
+    left: 5px;
+    top: 8px;
+    border-radius: 50%;
+}
+.follow-link > li > a{
+    color: #18d26e;
+    font-weight: 600;
+} 
+.follow-link > li > a:hover{
+    text-decoration: underline;
+}
+.behind-lines .single-member{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.image-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    text-align: center;
+    background-color: rgba(24, 210, 110, 0.7);
+    display: block;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+}
+.behind-lines .single-member:hover .image-overlay{
+    opacity: 1;
+}
+.image-overlay h4{
+    padding-top: 100px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+/****************************
+    SINGLE BLOG CSS
+****************************/
+.large-single-blog{
+    background-color: #0c0d0d;;
+    min-height: 450px;
+    padding-top: 120px;
+}
+.large-single-blog .blog-header h1{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+}
+.large-single-blog .blog-meta ul li, .large-single-blog .blog-meta ul li a {
+    color: #fff;
+    font-size: 15px;
+}
+.blog-detail p{
+    margin-bottom: 20px;
+}
+.blog-detail h4{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}   
+.blog_link .prev-blog, .blog_link .next-blog{
+    border: 3px solid #111;
+    color: #111;
+    font-size: 22px;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+}
+.blog_link .next-blog{
+    text-align: right;
+}
+.blog_link .prev-blog span, .blog_link .next-blog span{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin: 0 auto 9px;
+}
+.blog_link .prev-blog:hover{
+    background-color: #111;
+    color: #fff;
+    transform: translateX(10px);
+}
+.blog_link .next-blog:hover{
+    background-color: #111;
+    color: #fff;
+    transform: translateX(-10px);
+}

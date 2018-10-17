@@ -1,0 +1,58 @@
+@media screen and (min-width: 992px){
+	.mynavbar li.dropdown:hover>div.dropdown-menu {
+  display: block;
+	}
+}
+/********* IPAD CSS ***********/
+@media screen and (max-width: 992px){
+	.sidebar-area{
+		margin-top: 50px;
+	}
+	.widget-title{
+		padding: 0px;
+    	margin-left: 0px;
+	}
+	.sidebar-widget{
+		padding: 0px;
+	}
+	.mynavbar .dropdown-menu{
+		background:transparent;
+	}
+	.mynavbar .dropdown-item{
+		color: #fff;
+	}
+}
+/********* TAB CSS ***********/
+@media screen and (max-width: 767px){
+	.hero-text > h2 {
+		font-size: 20px;
+	}
+	.single-blog .blog-info .blog-title {
+		font-size: 25px;
+	}
+	.large-single-blog .blog-header h1{
+		font-size: 30px;
+	}
+	.blog-detail p {
+		font-size: 15px;
+	}
+	.about .hero-text > h2, .contact .hero-text > h2{
+		font-size: 40px;
+	}
+	.blog-detail h4 {
+	    margin-bottom: 15px;
+	    font-size: 20px;
+	}
+}
+/********* Mobile CSS ***********/
+@media screen and (max-width: 767px){
+	.blog_link .prev-blog, .blog_link .next-blog{
+		margin-bottom: 15px;
+	}
+	.large-single-blog .blog-meta ul li, .large-single-blog .blog-meta ul li a { 
+    	font-size: 14px;
+	}
+	.mynavbar .navbar-brand > img{
+    	width: 80px;
+	}
+}
